@@ -1,0 +1,8 @@
+USE PROGFINANZIATI;
+
+SELECT * FROM Docente;
+
+ALTER TABLE Docente
+CHANGE COLUMN Firstname Nome VARCHAR(20);
+
+SELECT * FROM Docente;

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket-based Chat</title>
+    <script type="text/javascript">
+
+        var console = {	
+        	write : function(message) {
+            	var p = document.createElement('p');
+            	p.innerHTML = message;
+            	document.getElementById('console').appendChild(p); 
+       		 }
+        };	 
+        	
+
+        var chat = {
+        
+        	socket : null,
+
+        	sendMessage : function() {
+         	   var message = document.getElementById('chat').value;
+            	if (message != '') {
+               		chat.socket.send(message);
+               	 	document.getElementById('chat').value = '';
+            	}
+       		 },
+
+        	connect : function(host) {
+        		
+		    	this.socket = new WebSocket(host);
+            
+		    	this.socket.onopen = function () {
+                	console.write('Info: the connection is now active.');
+                	document.getElementById('chat').onkeydown = function(event) {
+                    	if (event.keyCode == 13) {
+                        	chat.sendMessage();
+                   	 	}
+                	}
+		    	}
+
+            	this.socket.onclose = function () {
+                	document.getElementById('chat').onkeydown = null;
+                	console.write('Info: the connection has been closed.');
+            	}
+
+            	this.socket.onmessage = function (message) {
+                	console.write(message.data);
+            	}
+        	}
+        }	   	
+ 
+
+        chat.connect('ws://127.0.0.1:8080/Ex12.1/websocket/chat');
+
+    </script>
+</head>
+<body>
+    <p>
+        <input type="text" placeholder="insert text and enter to send a message" id="chat" />
+    </p>
+    <div id="console-container">
+        <div id="console"> </div>
+    </div>
+</body>
+</html>

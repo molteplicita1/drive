@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+
+
+/*fieldset {
+	background-color: #eeeeee;
+	border-width: thick;
+}*/
+	
+legend {
+	background-color: gray;
+	color: white;
+	padding: 5px 10px;
+}
+	
+input, select {
+	margin: 5px;
+}
+
+/*
+.myclass {
+	background-color: #eeeeee;
+	border-width: thick;
+}*/
+
+
+#fieldset1 {
+	background-color: #eeeeee;
+	border-width: thick;
+}

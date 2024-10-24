@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>HTML and Javascript</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+		  	<legend>Select image:</legend>
+		  	<input type="radio" id="none" name="imageselector" value="none" checked>None<br>
+		  	<input type="radio" id="unisannio" name="imageselector" value="unisannio">Unisannio Homepage<br>
+		  	<input type="radio" id="ding" name="imageselector" value="ding">DING Homepage<br>
+		  	<input type="radio" id="dst" name="imageselector" value="dst">DST Homepage<br>
+		  	<input type="radio" id="demm" name="imageselector" value="demm">DEMM Homepage<br>
+		</fieldset><br><br>
+	</form>
+	<br><br>
+	<div id="img_container"style="display:none;">
+		<img id="img" src="https://www.unisannio.it/themes/custom/unisannio/images/Logo_header.png" alt="none">
+	</div>	
+	
+	<script type="text/javascript">
+		const img_container = document.getElementById('img_container');
+		const img = document.getElementById('img');
+		
+		function handleRadioClick() {
+			if (document.getElementById('unisannio').checked) {
+		    	img.src = 'https://www.unisannio.it/themes/custom/unisannio/images/Logo_header.png';
+		    	img_container.style.display = 'block';
+		  	} else if(document.getElementById('ding').checked) {
+				img.src = 'https://www.ding.unisannio.it/templates/forte/images/s5_logo.png';
+				img_container.style.display = 'block';
+		  	} else if(document.getElementById('dst').checked) {
+				img.src = 'https://www.dstunisannio.it/sites/default/files/styles/content_full_column_848x477_/public/2019-02/logo%20dst%20mini.jpg?itok=kTHa1jYa';
+				img_container.style.display = 'block';
+			} else if(document.getElementById('demm').checked) {
+				img.src = 'https://www.demmunisannio.it/templates/forte/images/s5_logo.png';
+				img_container.style.display = 'block';
+			} else if(document.getElementById('none').checked) {
+				img.src = '';
+				img_container.style.display = 'none';
+			}
+		}
+		
+		const radioButtons = document.querySelectorAll('input[type="radio"]');
+		radioButtons.forEach(radio => {
+		  radio.addEventListener('click', handleRadioClick);
+		});
+	</script>
+</body>
+</html>

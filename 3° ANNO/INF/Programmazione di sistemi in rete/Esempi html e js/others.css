@@ -1,0 +1,91 @@
+@charset "ISO-8859-1";
+
+/*Display*/
+p.red {
+	color: red;
+}
+
+p.ex1 {
+	display: none;
+}
+
+p.ex2 {
+	display: inline;
+}
+
+p.ex3 {
+	display: block;
+}
+
+p.ex4 {
+	display: inline-block;
+}
+
+p.ex5 {
+	display: contents;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: flex-start;
+}
+
+.flex-container > div{
+	flex-basis: 200px;
+	border: 3px solid #73AD21;
+}
+
+/*Positions*/
+
+div.relative {
+  position: relative;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+div.static {
+  position: static;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+div.fixed {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+  background-color: #73AD21;
+  opacity: 1;
+  z-index: -1;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}

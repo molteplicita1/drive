@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Form with javascript</title>
+</head>
+<body>
+	<form>
+	<fieldset>
+		<legend>Registry</legend>
+		<fieldset>
+		  	<label for="fname">First name:</label><br>
+		  	<input type="text" id="fname" name="firstname" value="Mickey">
+		  	<br>
+			<label for="lname">Last name:</label><br>
+		  	<input type="text" id="lname" name="lastname" value="Mouse">
+		</fieldset><br><br>
+		<fieldset>
+		  	<legend>Sex:</legend>
+		  	<input type="radio" name="gender" value="male" checked> Male<br>
+		  	<input type="radio" name="gender" value="female"> Female<br>
+		</fieldset><br><br>
+		<fieldset>
+			<legend>Residence:</legend>
+			<label for="city">Birth place:</label><br>
+			<select id="city" name="city">
+				<option value="benevento">Benevento</option>
+				<option value="napoli">Napoli</option>
+				<option value="caserta">Caserta</option>
+				<option value="salerno">Salerno</option>
+				<option value="avellino">Avellino</option>				
+			</select><br>
+			<!--<input list="city">
+			<datalist id="city">
+				<option value="benevento">Benevento</option>
+				<option value="napoli">Napoli</option>
+				<option value="caserta">Caserta</option>
+				<option value="salerno">Salerno</option>
+				<option value="avellino">Avellino</option>	
+			</datalist><br>-->
+			<label for="address">Address:</label><br>
+			<input type="text" id="address" name="address"><br>
+			<label for="cap">Postal code:</label><br>
+			<input type="text" id="cap" name="cap"><br>
+		</fieldset><br><br>
+	</fieldset>
+	  <input id="submit" type="submit" value="Submit">
+	</form>
+	
+	<script type="application/javascript" src="form.js"></script>
+</body>
+</html>
