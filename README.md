@@ -1,4 +1,4 @@
-## Supporta il lavoro
+# Supporta il lavoro
 
 Se trovi utile questo archivio e vuoi contribuire a mantenere attivo il progetto, puoi fare una donazione tramite PayPal. Ogni piccolo contributo fa la differenza e ci aiuta a continuare.
 
