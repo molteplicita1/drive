@@ -4,7 +4,7 @@ Se trovi utile questo archivio e vuoi contribuire a mantenere attivo il progetto
 
 Clicca [**qui**](https://paypal.me/fidaje) per donare
 
-Se vuoi partecipare al drive inviare una mail a sprinstrim@gmail.com
+Se vuoi partecipare al drive, invia una mail a sprinstrim@gmail.com
 
 
 Grazie mille per il tuo sostegno!
