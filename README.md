@@ -15,3 +15,7 @@ In questo drive è possibile trovare materiale didattico per i corsi di laurea t
 I file contenuti all'interno di questa raccolta sono stati creati dagli studenti che frequentano o che hanno frequentato il corso, sono da considerarsi **NON** ufficiali e **NON** controllati dai docenti.
 
 Il materiale fornito ha il solo scopo di aiutare gli studenti e **NON** deve  essere considerato come sostituzione alle lezioni e al materiale dei docenti.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/chart?repos=molteplicita1/drive&type=date&legend=top-left)](https://www.star-history.com/?repos=molteplicita1%2Fdrive&type=date&legend=top-left)
